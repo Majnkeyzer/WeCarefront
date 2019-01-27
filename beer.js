@@ -22,7 +22,8 @@ Vue.component('beer', {
       }
     }
   },
-  template: `<div class="beer-container">
+  template: `
+  <div class="beer-container">
         <span>{{beer.title}}</span> -
         <span>{{beer.brewery}}</span> -
         <span @mouseover="mouseOver" @mouseout="mouseOver" :class="highPercentageClass">{{beer.percentage.toFixed() }} %</span>
