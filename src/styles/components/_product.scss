@@ -1,0 +1,29 @@
+.product-image {
+    max-width: 180px;
+    max-height: 245px;
+  }
+.product-item {
+    display: inline-block;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 3px;
+    color: #000;
+}
+
+a {
+    color: #000;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.product-information {
+    color: #000;
+    text-align: center;
+  }
+
+.mt-l {
+    margin-top: 100px;
+}

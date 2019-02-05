@@ -3,17 +3,16 @@ body {
   font-family: "Roboto Mono", monospace;
 }
 
-.item-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 0;
-}
-
 .flex-center {
   display: flex;
   justify-content: center;
 }
 
-@import "button";
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@import "./elements/button";
+@import "./components/wishlist";
+@import "./components/product";
