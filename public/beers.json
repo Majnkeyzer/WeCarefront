@@ -1,0 +1,47 @@
+[
+    {
+       "id": "1",
+       "brewery": "brouwerij Jopen",
+       "title": "Mooie Nel I.P.A.",
+       "city": "Haarlem",
+       "province": "Noord-Holland",
+       "percentage": 6.5,
+       "img":"https://www.jopenbier.nl/app/uploads/2014/05/jopen-mooie-nel-1.png"
+   },
+    {
+       "id": "2",
+       "brewery": "brouwerij Jopen",
+       "title": "Malle Babbe",
+       "city": "Haarlem",
+       "province": "Noord-Holland",
+       "percentage": 5.5,
+       "img":"https://www.jopenbier.nl/app/uploads/2014/05/jopen-malle-babbe.png"
+   },
+    {
+       "id": "3",
+       "brewery": "Brouwerij Jopen",
+       "title": "Ongelovige Thomas",
+       "city": "Haarlem",
+       "province": "Noord-Holland",
+       "percentage": 10,
+       "img": "https://www.jopenbier.nl/app/uploads/2014/05/jopen-ongelovige-thomasl.png"
+   },
+   {
+       "id": "4",
+       "brewery": "De Leckere brouwerij",
+       "title": "Witte vrouwen",
+       "city": "Utrecht",
+       "province": "Utrecht",
+       "percentage": 5.0,
+       "img": "http://www.deleckere.nl/wp-content/uploads/2014/11/content-bieren-witte-vrouwen-25cl.png"
+   },
+    {
+       "id": "5",
+       "brewery": "De Leckere brouwerij",
+       "title": "Willibrord",
+       "city": "Utrecht",
+       "province": "Utrecht",
+       "percentage": 5.5,
+       "img": "http://www.deleckere.nl/wp-content/uploads/2015/01/content-bieren-Willibrord-25cl.png"
+   }
+]
