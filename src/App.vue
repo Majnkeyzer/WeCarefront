@@ -23,33 +23,21 @@ export default {
     return {
       sidebarVisible: false,
       title: "special beers",
-      beers: [
-        {
-          id: "1",
-          brewery: "brouwerij Jopen",
-          title: "Mooie Nel I.P.A.",
-          city: "Haarlem",
-          province: "Noord-Holland",
-          percentage: 6.5,
-          img:
-            "https://www.jopenbier.nl/app/uploads/2014/05/jopen-mooie-nel-1.png"
-        },
-        {
-          id: "2",
-          brewery: "brouwerij Jopen",
-          title: "Malle Babbe",
-          city: "Haarlem",
-          province: "Noord-Holland",
-          percentage: 5.5,
-          img:
-            "https://www.jopenbier.nl/app/uploads/2014/05/jopen-malle-babbe.png"
-        }
-      ]
+      beers: []
     };
+  },
+  created() {
+    this.getBeers();
   },
   methods: {
     toggleSidebar() {
       this.sidebarVisible = !this.sidebarVisible;
+    },
+    getBeers() {
+      const baseURI = `./beers.json`;
+      this.$http.get(baseURI).then(result => {
+        this.beers = result.data;
+      });
     }
   },
   components: {
@@ -63,6 +51,7 @@ export default {
 .main-list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
 }
