@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div>
-      <Header />
+      <Header @toggle-sidebar="toggleSidebar" />
       <div class="main-content">
         <h1>{{ title }}</h1>
         <ul class="main-list" v-if="beers">
@@ -46,6 +46,11 @@ export default {
         }
       ]
     };
+  },
+  methods: {
+    toggleSidebar() {
+      this.sidebarVisible = !this.sidebarVisible;
+    }
   },
   components: {
     Sidebar,
