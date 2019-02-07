@@ -2,15 +2,10 @@
   <div id="app">
     <div>
       <Header />
-      <div>
+      <div class="main-content">
+        <h1>{{ title }}</h1>
         <ul class="main-list" v-if="beers">
-          <li class="product-item" v-for="beer in beers" :key="beer.id">
-            <div class="product-information">
-              <header class="product-title">{{ beer.title }}</header>
-              <div>{{ beer.city }}</div>
-              <img class="product-image" :src="beer.img" />
-            </div>
-          </li>
+          <Beer v-for="beer in beers" :beer="beer" :key="beer.id" />
         </ul>
       </div>
       <Sidebar :sidebarVisible="sidebarVisible" />
@@ -20,6 +15,8 @@
 <script>
 import Sidebar from "./components/Sidebar.vue";
 import Header from "./components/Header.vue";
+import Beer from "./components/Beer.vue";
+
 export default {
   name: "app",
   data() {
@@ -52,7 +49,8 @@ export default {
   },
   components: {
     Sidebar,
-    Header
+    Header,
+    Beer
   }
 };
 </script>
@@ -62,6 +60,9 @@ export default {
   justify-content: center;
   padding: 0;
   margin: 0;
-  margin-top: 100px;
+}
+
+.main-content {
+  margin-top: 60px;
 }
 </style>
