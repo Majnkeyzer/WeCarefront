@@ -29,7 +29,7 @@ export default {
           brewery: "brouwerij Jopen",
           title: "Mooie Nel I.P.A.",
           city: "Haarlem",
-          rovince: "Noord-Holland",
+          province: "Noord-Holland",
           percentage: 6.5,
           img:
             "https://www.jopenbier.nl/app/uploads/2014/05/jopen-mooie-nel-1.png"
