@@ -21,6 +21,7 @@ export default {
   name: "app",
   data() {
     return {
+      sidebarVisible: false,
       title: "special beers",
       beers: [
         {
