@@ -3,7 +3,6 @@
     <div>
       <Header @toggle-sidebar="toggleSidebar" />
       <div class="main-content">
-        <h1>{{ title }}</h1>
         <ul class="main-list" v-if="beers">
           <Beer v-for="beer in beers" :beer="beer" :key="beer.id" />
         </ul>
@@ -22,7 +21,6 @@ export default {
   data() {
     return {
       sidebarVisible: false,
-      title: "special beers",
       beers: []
     };
   },

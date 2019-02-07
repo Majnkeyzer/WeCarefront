@@ -2,7 +2,14 @@
 body {
   font-family: "Roboto Mono", monospace;
 }
+
+@import "./mixins";
+
 @import "./elements/button";
+@import "./components/menu";
+@import "./components/the-end";
 @import "./components/wishlist";
 @import "./components/product";
 @import "./components/wishcounter";
+@import "./components/wishitem";
+@import "./components/sidebar";
