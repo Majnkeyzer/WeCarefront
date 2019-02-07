@@ -28,6 +28,7 @@ export default {
   },
   methods: {
     handleAddToWishList() {
+      this.$store.commit("incrementTotal", this.number);
       this.resetAmount();
     },
     resetAmount() {
